@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # InstaWedd — static website
 
 This folder is a standalone HTML/CSS/JavaScript export of the supplied InstaWedd website. Use a NEW folder/repository; do not replace your working dynamic project with it.
@@ -44,3 +45,7 @@ https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-
 - Studio slideshow: assets/studio-slideshow.js (4 seconds; pauses during mouse hover).
 
 Do not add your original data/, instawedd.sqlite, .env, private uploads, customer details or API keys to this repository. Those files are not included in this ZIP.
+=======
+# InstaWedd
+InstaWedd Weddings Static website
+>>>>>>> 584d3ab45f2826dda160e99c66badb2adbaa6186
