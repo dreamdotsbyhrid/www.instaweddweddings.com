@@ -1,0 +1,9 @@
+.env
+.env.*
+data/
+*.sqlite
+*.sqlite-*
+node_modules/
+*.zip
+.DS_Store
+Thumbs.db

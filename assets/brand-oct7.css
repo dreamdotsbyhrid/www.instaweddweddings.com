@@ -1,0 +1,23 @@
+/* Original supplied PNG, framed through its transparent margins without stretching. */
+.iw-logo-mark{display:inline-block;flex:0 0 auto;width:48px;height:48px;background:currentColor;-webkit-mask:url('../image/instawedd-logo.png') center/434% 650% no-repeat;mask:url('../image/instawedd-logo.png') center/434% 650% no-repeat}
+.iw-wordmark{display:inline-flex!important;align-items:baseline;gap:.24em;white-space:nowrap;font-family:Georgia,'Times New Roman',serif;letter-spacing:0!important;line-height:1.15}
+.iw-wordmark>b{font-weight:800!important;font-size:inherit;color:inherit}
+.iw-wordmark>span{display:inline!important;font:400 1em/1.15 Georgia,'Times New Roman',serif!important;letter-spacing:0!important;color:inherit}
+.iw-wordmark>span:before,.iw-wordmark>span:after{display:none!important}
+.opening-brand,.site-header a.logo,.shared-brand{display:flex!important;align-items:center!important;gap:10px!important;white-space:nowrap;min-width:0;text-decoration:none}
+.opening-brand>.iw-wordmark,.site-header a.logo>.iw-wordmark,.shared-brand>.iw-wordmark{font-size:clamp(12px,1.35vw,20px)!important;padding:0!important;border:0!important}
+.atelier-home .intro-art{display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(1000px,96%);padding:100px 16px 65px;gap:20px}
+.atelier-home .intro-art>.iw-logo-mark{width:clamp(75px,10vw,110px);height:clamp(75px,10vw,110px);color:#efd9a8}
+.atelier-home .intro-art .intro-name{font-size:clamp(22px,5.2vw,68px)!important;letter-spacing:0!important;margin:0!important;line-height:1.2!important;width:auto!important;color:#efd9a8!important}
+.atelier-home .intro-art .intro-name>.iw-wordmark{font-size:inherit!important}
+.atelier-home .intro-art .intro-love-story{font:400 clamp(19px,2.5vw,34px)/1.5 Georgia,serif!important;color:#fff4df!important;margin:0!important;text-align:center;text-shadow:0 2px 15px #0009}
+.intro-love-story em{font-weight:400}.intro-love-story>span{display:block;font-size:.72em}
+.atelier-home .intro-art .intro-skip{margin-top:16px!important}
+@media(max-width:650px){.opening-nav{padding:16px!important;gap:8px!important}.opening-brand{gap:7px!important}.opening-brand>.iw-logo-mark{width:34px;height:34px}.opening-brand>.iw-wordmark{font-size:clamp(11px,3vw,17px)!important}.opening-actions{gap:6px!important}.opening-actions button{width:32px!important;height:32px!important;padding:5px!important}.site-header a.logo>.iw-logo-mark,.shared-brand>.iw-logo-mark{width:30px;height:30px}.site-header a.logo>.iw-wordmark,.shared-brand>.iw-wordmark{font-size:clamp(11px,3vw,16px)!important}.atelier-home .intro-art{padding:100px 12px 50px;gap:22px}.atelier-home .intro-art .intro-name{font-size:clamp(20px,5.6vw,36px)!important}.atelier-home .intro-art .intro-love-story{font-size:clamp(20px,5vw,28px)!important}}
+@media(max-height:620px) and (min-width:651px){.atelier-home .intro-art{gap:10px;padding:85px 15px 25px}.atelier-home .intro-art>.iw-logo-mark{width:65px;height:65px}.atelier-home .intro-art .intro-name{font-size:38px!important}.atelier-home .intro-art .intro-love-story{font-size:22px!important}.atelier-home .intro-art .intro-skip{margin-top:5px!important}}
+/* Override legacy stacked-wordmark rules in the earlier stylesheet bundles. */
+.opening-brand,.site-header a.logo,.shared-brand{flex-direction:row!important}
+.opening-brand>.iw-logo-mark{padding:0!important;border:0!important}
+.iw-wordmark,.iw-wordmark>span{margin:0!important;padding:0!important;gap:.24em!important}
+.atelier-home .intro-name .iw-wordmark:before,.atelier-home .intro-name .iw-wordmark:after,.atelier-home .intro-name .iw-wordmark>span:before,.atelier-home .intro-name .iw-wordmark>span:after{display:none!important;content:none!important}
+.atelier-home .intro-love-story em{color:inherit!important}

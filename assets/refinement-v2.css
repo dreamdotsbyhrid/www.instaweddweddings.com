@@ -1,0 +1,104 @@
+/* Reference-led second pass. */
+.atelier-home #photography-packages .discovery-heading{margin:22px auto 10px;gap:0;max-width:900px}
+.atelier-home #photography-packages .discovery-heading h3{font-size:clamp(29px,3vw,42px);line-height:1.15;margin:8px 0 10px}
+.atelier-home #photography-packages .discovery-heading .eyebrow{margin:0}
+.atelier-home #photography-packages .atelier-strip-intro{font-size:14px;line-height:1.6;margin:8px auto;max-width:740px}
+.atelier-home #photography-packages .discovery-heading>a{margin-top:4px}
+.atelier-home #gifting>.container>.card-grid{max-width:1160px;gap:22px}
+.atelier-home #gifting .gift-card{position:relative;display:block;height:310px;min-height:0;padding:0;border:2px solid #fffaf3;border-radius:12px;overflow:hidden}
+.atelier-home #gifting .gift-card .art{position:absolute;inset:0;width:100%;height:100%}
+.atelier-home #gifting .gift-card .art img{height:100%;width:100%;object-fit:cover}
+.atelier-home #gifting .gift-card .overlay{position:absolute;inset:auto 0 0;min-height:0;width:100%;padding:60px 34px 20px 17px;background:linear-gradient(transparent,#35111be8);text-align:left}
+.atelier-home #gifting .gift-card .overlay .price{font-size:9px;color:#efce8f!important}
+.atelier-home #gifting .gift-card .overlay h4{font:20px/1.25 Georgia;color:#fff6e7!important;margin:7px 0}
+.atelier-home #gifting .gift-card .overlay:after{right:10px;bottom:18px;color:#f1d498;border:1px solid #efce8f;width:23px;height:23px;background:transparent}
+.atelier-home #gifting .gift-card:hover .overlay,.atelier-home #gifting .gift-card:focus-visible .overlay{background:linear-gradient(transparent,#7a1f2bf5)}
+.atelier-home #gifting .sec-head em{color:#b6924c!important}
+.atelier-home #gifting .personalizer{max-width:1160px;margin:24px auto 0;grid-template-columns:1fr 1fr;gap:28px;padding:28px;background:#fbf1e9!important;box-shadow:none;border:1px solid #e7d4c2}
+.atelier-home #gifting .personalizer .controls{padding:0 24px 0 0;border-right:1px solid #e6d4c7;counter-reset:steps}
+.atelier-home #gifting .personalizer h3{color:#7a1f2b!important;font-size:30px!important;margin:8px 0 12px}
+.atelier-home #gifting .personalizer .controls>p:not(.eyebrow){font-size:13px!important;line-height:1.6;margin-bottom:16px}
+.atelier-home #gifting .personalizer .field{margin:14px 0}
+.atelier-home #gifting .personalizer .field label{font-size:12px;color:#68414a;display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.step-dot{display:inline-grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#7a1f2b;color:#f6d9a2;font:11px Arial;flex:none}
+.atelier-home #gifting .personalizer select,.atelier-home #gifting .personalizer input[type=text]{width:100%;padding:11px 12px;background:#fffaf5;border:1px solid #dec7bb;border-radius:5px;font-size:12px}
+.atelier-home #gifting .personalizer input[type=file]{width:100%;padding:17px 10px;border:1px dashed #ceb19c;border-radius:6px;font-size:11px;background:#fff8f2}
+.atelier-home #gifting .personalizer input::file-selector-button{background:#7a1f2b;color:#fff3dd;border:0;border-radius:18px;padding:8px 13px;margin-right:10px;cursor:pointer}
+.atelier-home #gifting .personalizer .preview{display:flex;flex-direction:column;align-items:stretch;justify-content:center;min-height:0;padding:0;background:none;border-radius:7px}
+.atelier-home #gifting .personalizer .preview>.eyebrow{margin:0 0 10px;font-size:10px;letter-spacing:.16em;color:#7a1f2b}
+.keepsake-reference{display:block;width:100%;height:390px;object-fit:contain;background:#f2e4d9;border-radius:7px}
+.personalizer .preview:not(.has-upload) .personalizer-preview-stage,.personalizer .preview:not(.has-upload) #giftCropBtn{display:none}
+.personalizer .preview.has-upload .keepsake-reference{display:none}
+.atelier-home #gifting .personalizer .frame{width:230px;height:290px;transform:rotate(3deg);margin:auto}
+.atelier-home #gifting .personalizer .upload-help,.atelier-home #gifting .personalizer .small-order-note{font-size:11px;line-height:1.5;margin:7px 0}
+.atelier-home #gifting .personalizer #addToCartBtn{width:100%;padding:12px 20px;border-radius:8px;background:#7a1f2b!important;color:#fff4dc!important}
+.atelier-home #gifting .personalizer .price-note{color:#7a1f2b!important;font-size:16px!important;margin:12px 0!important}
+.atelier-home #gifting .atelier-gift-request{max-width:1160px;margin:20px auto 0;padding:20px 26px}
+.collection-theme.atelier-home .testi-wrap{background:#4b1423!important;padding:28px 0!important}
+.collection-theme.atelier-home .testi-wrap .container{max-width:1160px}
+.collection-theme.atelier-home .testi-card{background:#641f30!important;border-color:#bd965c88!important;padding:20px;box-shadow:0 5px 16px #26071422}
+.collection-theme.atelier-home .testi-card>p{font:italic 16px/1.65 Georgia!important;color:#fff1dc!important}
+.collection-theme.atelier-home .testi-card .testi-who strong{color:#f5dca3!important;font-size:13px;opacity:1}
+.collection-theme.atelier-home .testi-card .testi-who span{color:#f3ded2!important;font-size:11px;opacity:1}
+.collection-theme.atelier-home .testi-card .avatar{background:#d7b569!important;color:#4b1423!important;border-color:#edcc85}
+.atelier-home #journal-intro{padding:24px 0!important}
+.atelier-home #journal-intro .journal-reference{display:flex;align-items:center;justify-content:center;max-width:1160px;width:92%;min-height:270px;padding:28px 22%;background:#f8eee5 url('../image/home-journal.png') center/cover no-repeat;gap:0;border:1px solid #e6ccba}
+.atelier-home #journal-intro .journal-reference-copy{width:100%;margin:0;padding:0;text-align:left;background:none}
+.atelier-home #journal-intro .journal-reference-copy h2{font:28px/1.25 Georgia;margin:8px 0 12px;color:#5c1828}
+.atelier-home #journal-intro .journal-reference-copy .eyebrow{color:#956c37;font-size:9px;letter-spacing:.14em;margin:0}
+.atelier-home #journal-intro .journal-reference-copy p{font-size:12px;line-height:1.6;margin:8px 0;color:#654b43}
+.atelier-home #journal-intro .journal-reference-copy .btn{margin:8px 0 0;font-size:12px;padding:10px 20px;background:#7a1f2b!important;color:#f5dba7!important;border-color:#b6924c}
+.atelier-home #why-journey{padding:20px 0 26px!important}
+.atelier-home #why-journey>.container{max-width:1040px}
+.atelier-home #why-journey h2{font-size:30px;margin:5px 0 14px}
+.atelier-home #why-journey .eyebrow{font-size:9px;margin:0;text-align:center}
+.atelier-home .journey-steps{gap:18px;align-items:start}
+.atelier-home .journey-steps article{position:relative;padding:8px 0 8px 52px}
+.atelier-home .journey-steps .atelier-step-icon{position:absolute;left:0;top:10px;width:38px;height:38px;margin:0}
+.atelier-home .journey-steps .atelier-step-icon svg{width:24px;height:24px}
+.atelier-home .journey-steps article>span{font-size:16px}
+.atelier-home .journey-steps h3{font-size:20px;margin:4px 0 7px}
+.atelier-home .journey-steps p{font-size:12px;line-height:1.6}
+.collection-theme.atelier-home #contact .contact-actions>.btn{color:#f4d58c!important;border-color:#d6ae59!important;background:#681e31!important;display:inline-flex;align-items:center;justify-content:center}
+.collection-theme.atelier-home #contact .contact-actions>.btn svg{width:23px;height:23px;stroke:#f4d58c!important;opacity:1}
+.collection-theme.atelier-home #contact .contact-actions>.btn:hover{background:#d7b569!important;color:#481221!important}
+.collection-theme.atelier-home #contact .contact-actions>.btn:hover svg{stroke:#481221!important}
+.collection-theme.atelier-home #photography .pkg-wrap{max-width:1160px}
+.atelier-home #photography .pkg{padding:24px!important}
+.atelier-home #photography .pkg .tier{margin-bottom:0}
+.atelier-home #photography .pkg .tagline{min-height:44px}
+.atelier-home #photography .pkg .pkg-toggle{margin:10px 0 0}
+/* About starts with the studio, followed by its content tabs and founder's vision. */
+.collection-about main>.eyebrow,.collection-about main>h1{display:block}
+.collection-about main>h1{font:38px/1.2 Georgia;color:#7a1f2b;text-align:center;margin:8px 0 14px}
+.about-opening{max-width:720px;text-align:center;margin:0 auto 24px;font:14px/1.7 Arial;color:#6a514b}
+.collection-about .chapter-nav{margin:18px auto 22px}
+.collection-about .chapter-nav a:hover,.collection-about .chapter-nav a:focus-visible{background:#7a1f2b;color:#f1d598;border-color:#b6924c}
+.collection-about .book-spread{margin:0 0 24px;box-shadow:none}
+.collection-about .book-page{padding:28px}
+.collection-about .book-page h2{font-size:32px}
+.collection-about .book-page p{font-size:14px;line-height:1.7}
+.collection-about .book-page h3{font-size:23px;margin:14px 0 6px}
+.collection-about .portrait-page img{height:340px;object-fit:contain}
+.about-vision-section{text-align:center;padding:25px 0 10px;border-top:1px solid #ddc6a6}
+.about-vision-section h2{font:32px/1.2 Georgia;color:#7a1f2b;margin:8px 0 12px}
+.about-vision-section>p:not(.eyebrow){max-width:600px;margin:0 auto 18px;font:14px/1.7 Arial;color:#6c554b}
+.collection-about .about-vision{width:min(570px,100%);margin:20px auto 0;border-radius:12px;transition:transform .3s,box-shadow .3s;background:#fffaf3}
+.collection-about .about-vision img{display:block;width:100%;height:auto;object-fit:contain;border-radius:12px}
+.collection-about .about-vision:hover,.collection-about .about-vision:focus-visible{transform:translateY(-4px);box-shadow:0 12px 30px #7a1f2b24;outline:2px solid #b6924c;outline-offset:5px}
+@media(max-width:900px){.atelier-home #gifting .personalizer{grid-template-columns:1fr 1fr;gap:20px;padding:22px}.atelier-home #gifting .personalizer .controls{padding-right:16px}.keepsake-reference{height:340px}.atelier-home #journal-intro .journal-reference{padding:24px 20%;min-height:250px}.atelier-home #journal-intro .journal-reference-copy h2{font-size:24px}}
+@media(max-width:600px){.atelier-home #gifting .gift-card{height:265px}.atelier-home #gifting .gift-card .overlay{padding:50px 30px 16px 12px}.atelier-home #gifting .gift-card .overlay h4{font-size:17px}.atelier-home #gifting .personalizer{grid-template-columns:1fr;padding:20px;gap:18px}.atelier-home #gifting .personalizer .controls{border:0;padding:0}.keepsake-reference{height:auto;max-height:440px}.atelier-home #gifting .personalizer h3{font-size:27px!important}.atelier-home #journal-intro .journal-reference{padding:24px 20px 24px 27%;min-height:250px;background-position:27% center}.atelier-home #journal-intro .journal-reference-copy{background:#fff6ebdf;padding:14px;border-radius:8px}.atelier-home #journal-intro .journal-reference-copy h2{font-size:22px}.atelier-home #journal-intro .journal-reference-copy p{font-size:11px}.atelier-home .journey-steps{gap:4px}.atelier-home #why-journey h2{font-size:28px}.collection-about main>h1{font-size:30px}.collection-about .book-page{padding:22px}.about-vision-section h2{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.collection-about .about-vision{transition:none;transform:none!important}}
+.atelier-home #gifting .gift-card{width:100%;min-width:0;max-width:100%;justify-self:stretch}
+.atelier-home #gifting .personalizer .upload-field{padding:0;border:0;background:none}
+.atelier-home #gifting .personalizer .controls>p.small-order-note{font-size:10px!important}
+.quantity-control{display:inline-flex;border:1px solid #dec7bb;border-radius:6px;overflow:hidden;background:#fffaf5}
+.quantity-control button{width:32px;border:0;background:transparent;color:#7a1f2b;cursor:pointer;font-size:18px}
+.quantity-control button:hover{background:#7a1f2b;color:#f4d99f}
+.quantity-control input{appearance:textfield;width:48px;text-align:center;padding:7px 3px;border:0;border-inline:1px solid #dec7bb;background:transparent;color:#7a1f2b}
+.quantity-control input::-webkit-inner-spin-button{appearance:none}
+.atelier-home #journal-intro .journal-reference{padding-left:35%;padding-right:18%}
+.collection-about .chapter-nav a[aria-current=page]{background:#7a1f2b!important;color:#fff1d2!important;opacity:1!important}
+@media(max-width:600px){.atelier-home #gifting>.container>.card-grid{gap:12px}.atelier-home #journal-intro .journal-reference{padding-left:27%;padding-right:20px}}
+.atelier-home #photography .photo-card,.atelier-home #bridal .photo-card,.atelier-home #events .photo-card{width:100%;min-width:0;max-width:100%}
+@media(max-width:600px){.atelier-home .site-header .logo{font-size:17px!important;white-space:normal;min-width:0}.atelier-home .site-header .nav-row{gap:8px}.atelier-home .site-header .nav-actions{flex-shrink:0}}

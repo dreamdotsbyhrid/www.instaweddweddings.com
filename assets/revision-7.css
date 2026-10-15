@@ -1,0 +1,10 @@
+/* Keep account menus legible above all page-specific header colours. */
+body .site-header .portal-account-menu a,body .site-header .portal-account-menu button,.portal-account-menu strong{color:#7a1f2b!important;background:#fffaf3}
+body .site-header .portal-account-menu a:hover,body .site-header .portal-account-menu button:hover,body .site-header .portal-account-menu .owner-dashboard-link{background:#7a1f2b!important;color:#fffaf3!important}
+.planner-introduction{max-width:1120px;margin:24px auto 50px}.planner-introduction>img{display:block;width:100%;height:auto;border-radius:8px}.planner-introduction>div{padding:24px 0}.planner-card img,.service-hero-planner>img{object-fit:contain!important;background:#fff7ec}.planner-card span{color:#7a1f2b;font-weight:700}
+.gifting-page .hero-stats,.gifting-page .hero-copy,.gifting-page .hero-media,.gifting-page .portfolio-offer-location{display:none!important}
+#portfolio .gallery.reveal{opacity:1!important;transform:none!important}
+html.skip-intro{scroll-behavior:auto}.gifting-page #gifting{position:relative;isolation:isolate}
+.business-editor .editor-product-image{display:block;max-width:100%;height:220px;object-fit:contain;background:#f5e9dc}
+body[data-portal="account"] .site-header .logo{color:#7a1f2b!important}
+body[data-portal="account"] .site-header .tag{color:#a9803b!important}

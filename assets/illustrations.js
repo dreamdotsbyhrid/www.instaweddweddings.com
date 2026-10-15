@@ -1,0 +1,1 @@
+(async()=>{try{const data=await api('/api/gallery');document.querySelectorAll('[data-art]').forEach(im=>{const s=data.slots?.find(s=>s.id==='art-'+im.dataset.art);if(!s)return;if(s.hidden){im.parentElement.hidden=true;return}im.src=s.url+'?slot='+encodeURIComponent(s.id)+'&v='+encodeURIComponent(s.updated);im.style.objectPosition=`${s.x}% ${s.y}%`;});}catch{}})();

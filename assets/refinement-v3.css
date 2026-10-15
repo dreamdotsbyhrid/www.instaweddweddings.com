@@ -1,0 +1,42 @@
+/* Compact service pages and contained keepsake preview. */
+.atelier-home #gifting .personalizer .preview.has-upload{padding:20px 12px;background:radial-gradient(ellipse at top left,#dec2aa80,transparent 65%),url('../image/botanical.svg') right bottom/100px auto no-repeat,#f1e3d7;border:1px solid #ddc5af;overflow:hidden}
+.atelier-home #gifting .personalizer .personalizer-preview-stage{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-width:0;padding:14px 0}
+.atelier-home #gifting .personalizer .preview:not(.has-upload) .personalizer-preview-stage{display:none}
+.atelier-home #gifting .personalizer .frame{box-sizing:border-box;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:14px;width:250px;max-width:calc(100% - 56px);height:340px;padding:16px;transform:none;flex:0 1 250px;background:#fffaf3;box-shadow:0 8px 24px #55273224;overflow:hidden}
+.atelier-home #gifting .personalizer .photo-slot{display:block;width:100%;height:100%;min-height:0;min-width:0;overflow:hidden;margin:0;background:#ece0d6}
+.atelier-home #gifting .personalizer .photo-slot img{display:block;width:100%;height:100%;max-height:100%;object-fit:contain;position:static}
+.atelier-home #gifting .personalizer .frame .cap{position:static;width:100%;min-width:0;margin:0;padding:0 4px 3px;box-sizing:border-box;font:italic 17px/1.4 Georgia;text-align:center;white-space:normal;overflow-wrap:anywhere;color:#6b2334}
+.atelier-home #gifting .personalizer .preview-nav{flex:0 0 24px;width:24px;height:32px;padding:0}
+.atelier-home #gifting .personalizer #giftCropBtn{align-self:center;margin:10px 0 0}
+.footer-extras{display:flex!important;align-items:center!important;justify-content:center!important;gap:20px!important;flex-wrap:wrap}
+.footer-follow{display:flex;align-items:center;justify-content:center;gap:12px}
+.footer-follow .portal-socials{display:flex!important;align-items:center;justify-content:center;gap:8px;margin:0!important}
+.footer-follow .portal-socials a,.footer-follow .portal-socials .social-unavailable{display:inline-flex!important;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #c19b60;border-radius:50%;color:#efd29a!important;background:#681e31}
+.footer-follow .portal-socials svg{width:17px;height:17px;fill:none;stroke:currentColor}
+.footer-follow .portal-socials a:hover{background:#d6b572;color:#4e1425!important;transform:translateY(-2px)}
+.footer-follow .social-unavailable{display:none!important}
+.collection-theme.atelier-home #why-journey>.container>.eyebrow,.collection-theme.atelier-home #why-journey>.container>h2{text-align:center!important;width:100%;max-width:none;margin-left:auto;margin-right:auto}
+.gift-promises .studio-support{font:inherit;color:inherit;background:transparent;border:0;padding:8px 10px;cursor:pointer;border-radius:6px}
+.gift-promises .studio-support:hover,.gift-promises .studio-support:focus-visible{background:#7a1f2b;color:#f4d599;outline:1px solid #b6924c}
+.collection-theme .portal-intro.collection-listing-banner{padding:0!important;margin:12px 0 24px!important;max-width:none;background:none!important}
+.service-listing-hero{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:28px;background:#f6ece3;padding:24px 32px;border-radius:10px;overflow:hidden;text-align:left}
+.service-listing-hero>div{min-width:0;max-width:580px}
+.collection-theme .service-listing-hero h1{font:clamp(28px,3.4vw,44px)/1.13 Georgia;color:#681e31;margin:10px 0 14px;text-align:left}
+.service-listing-hero p{font-size:14px;line-height:1.65;color:#705047;max-width:470px;margin:8px 0 16px}
+.service-listing-hero .eyebrow{font-size:10px;letter-spacing:.15em;color:#936c38}
+.service-listing-hero>img{width:100%;height:290px;object-fit:contain;border-radius:70px 8px 8px 8px;background:#e8d7c6}
+.service-listing-hero .btn{background:#7a1f2b!important;color:#f7dfa8!important;padding:11px 20px}
+.collection-theme .categories-bottom{padding:24px 0!important}
+.collection-theme .categories-bottom .category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;background:transparent!important}
+.collection-theme .categories-bottom .category-card{min-width:0;padding:14px;background:#fff9f2;border:1px solid #e3d2c0;border-radius:8px}
+.collection-theme .categories-bottom .category-card>a{display:flex;gap:10px;align-items:center}
+.collection-theme .categories-bottom .category-card img{width:54px;height:64px;flex:none;object-fit:cover;border-radius:4px}
+.collection-theme .categories-bottom .category-card h3{font:19px/1.2 Georgia;overflow-wrap:anywhere;margin:0}
+.collection-theme.atelier-home #home-offers{background:#f6eae4!important}
+.collection-theme.atelier-home #home-offers .offer-love-note{background:none!important;padding:16px;line-height:1.5;position:static}
+@media(max-width:800px){.collection-theme .categories-bottom .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-listing-hero{gap:18px;padding:22px}.service-listing-hero>img{height:270px}}
+@media(max-width:600px){.service-listing-hero{grid-template-columns:1fr;padding:20px;gap:18px}.service-listing-hero>img{height:260px;border-radius:45px 8px 8px 8px}.service-listing-hero h1{font-size:30px}.footer-extras{gap:12px!important}.footer-follow{flex-basis:100%}.collection-theme .categories-bottom .category-card{padding:10px}.collection-theme .categories-bottom .category-card>a{flex-direction:column;text-align:center}.collection-theme .categories-bottom .category-card h3{font-size:18px}.atelier-home #gifting .personalizer .frame{height:300px;padding:13px;gap:12px}}
+@media(max-width:600px){.collection-theme footer .foot-grid{grid-template-columns:1fr!important;gap:24px}.collection-theme footer .foot-grid>div{min-width:0}.collection-theme footer .newsletter{max-width:100%;width:100%}.collection-theme footer .newsletter input{min-width:0;width:100%;flex:1}.collection-theme footer a{overflow-wrap:anywhere}}
+
+.upi-payment{max-width:680px;margin:0 auto 24px;padding:24px;background:#fff8ef;border:1px solid #d7b574}.upi-payment #upiQR{width:240px;max-width:100%;margin:20px auto;background:white}.upi-payment #upiQR svg{display:block;width:100%;height:auto}.upi-payment .btn{margin:6px}.upi-payment label,.upi-owner-review label{display:block;margin:16px 0}.upi-payment input{display:block;padding:12px;max-width:100%;border:1px solid #bc9f89;border-radius:6px}.upi-owner-review{padding:18px;background:#fff4df}.upi-owner-review input[type=checkbox]{width:auto}
+#orderView .upi-payment{padding:24px!important;box-sizing:border-box}#orderView .upi-payment h2{color:#7a1f2b}#orderView .upi-payment input{width:100%;box-sizing:border-box}

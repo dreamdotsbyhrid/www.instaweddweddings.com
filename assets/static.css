@@ -1,0 +1,3 @@
+.account-wrap,.portal-person,.opening-account,#drawerAccountLink,.portal-account-menu,[data-save-service],[data-wish],.save-service,.account-cart-badge,.requires-auth,#localWorkspace,.checkout-address,#giftCart,.gift-cart,.gift-cart-panel,[data-local],#serviceAuthState{display:none!important}
+.static-enquiry-note{font-size:.9rem;line-height:1.5;color:#6e5540}
+.static-notice{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999999;background:#702331;color:white;padding:14px 22px;border-radius:12px;max-width:85vw}

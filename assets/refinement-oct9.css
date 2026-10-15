@@ -1,0 +1,35 @@
+/* Normal document scrolling: no zoom, pinning or text fading. */
+.atelier-home .brand-intro{height:auto!important;min-height:100svh;background:#190e12}
+.atelier-home .intro-sticky{position:relative!important;top:auto!important;height:auto!important;min-height:100svh!important;transform:none!important;opacity:1!important;overflow:hidden}
+.atelier-home .intro-zoom-image{clip-path:none!important;transform:none!important;will-change:auto!important;filter:brightness(.6)}
+.atelier-home .intro-art{position:relative!important;min-height:100svh;box-sizing:border-box;display:flex!important;flex-direction:column;justify-content:center;align-items:center;gap:24px!important;padding:130px 20px 55px!important;opacity:1!important;transform:none!important;margin:auto}
+.atelier-home .intro-art .intro-name{font-size:clamp(21px,4.1vw,54px)!important;line-height:1.2!important;margin:0!important}
+.iw-wordmark,.iw-wordmark>b,.iw-wordmark>span{font-family:Georgia,'Times New Roman',serif!important}
+.iw-wordmark>b{font-weight:800!important}.iw-wordmark>span{font-weight:400!important}
+.atelier-home .intro-art .intro-love-story{margin:0!important;font-weight:400!important}
+.atelier-home .intro-art .intro-skip{position:static!important;inset:auto!important;transform:none!important;margin:12px 0 0!important;flex-shrink:0;opacity:1!important}
+/* Keep the supplied iw letterform; draw a smooth vector-like circle in CSS. */
+.iw-logo-mark{position:relative;box-sizing:border-box;background:none!important;mask:none!important;-webkit-mask:none!important;border:1.5px solid currentColor!important;border-radius:50%;padding:0!important;aspect-ratio:1}
+.iw-logo-mark:before{content:'';position:absolute;inset:0;background:currentColor;mask:url('../image/instawedd-logo.png') center/434% 650% no-repeat;-webkit-mask:url('../image/instawedd-logo.png') center/434% 650% no-repeat;clip-path:circle(42% at 50% 50%)}
+.opening-brand>.iw-logo-mark{border:1.5px solid currentColor!important}
+.package-price-card{display:flex;flex-direction:column;gap:16px;padding:30px;text-decoration:none;border:1px solid #b48d46;background:#fffaf2;color:#741f32;border-radius:12px;transition:background .2s,color .2s}
+.package-price-card:hover,.package-price-card:focus-visible{background:#741f32;color:#ffe6af}.package-price-card h4{font:26px/1.3 Georgia!important;color:inherit!important;margin:0}.package-price-card strong{font:28px Georgia;color:inherit}.package-price-card img{width:100%;height:220px;object-fit:cover}
+.october-packages{text-align:center}.october-packages>.btn{display:table;margin:20px auto 0!important}.october-packages .service-list{text-align:left}
+.studio-service-poster{width:100%;height:auto!important;max-height:none!important;object-fit:contain!important}
+.section-photo-collection{margin:28px auto;padding:20px 0!important}.section-photo-collection h3{text-align:center;font:28px Georgia;color:#741f32}
+.section-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.section-photo-grid figure{margin:0;min-width:0;background:#f6eee5;overflow:hidden;border-radius:8px}.section-photo-grid img{display:block;width:100%;height:280px;filter:none!important}.section-photo-grid.is-slideshow{display:block;max-width:920px;margin:auto}.section-photo-grid.is-slideshow img{height:clamp(260px,45vw,500px)}.section-photo-grid [hidden]{display:none!important}.section-photo-controls{display:flex;align-items:center;justify-content:center;gap:15px;margin-top:14px}.section-photo-controls button{border:1px solid #a37a3d;color:#741f32;background:#fff7e9;padding:9px 16px;border-radius:6px;cursor:pointer}.section-photo-controls button:hover{background:#741f32;color:#fff7e9}
+#ownerGallery .photo-shelf{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))!important;gap:16px;overflow:visible!important}#ownerGallery .shelf-controls{display:none!important}.photo-playback-settings{border:1px solid #d8bd8c;border-radius:10px;padding:20px;margin:25px 0}.photo-playback-settings summary{font-size:19px;font-weight:700;cursor:pointer;color:#741f32}.photo-playback-settings form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.photo-playback-settings label{display:flex;align-items:center;gap:9px}.photo-playback-settings input[type=checkbox]{width:auto}.photo-playback-settings button,.photo-playback-settings [role=status]{grid-column:1/-1}.photo-search{display:block;margin:15px 0}.photo-search input{width:100%;box-sizing:border-box}
+@media(max-width:650px){.atelier-home .intro-art{padding:105px 12px 40px!important;gap:22px!important}.atelier-home .intro-art .intro-name{font-size:clamp(20px,5.4vw,34px)!important}.section-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-photo-grid img{height:220px}.photo-playback-settings form{grid-template-columns:1fr}.package-price-card{padding:23px}}
+.portfolio-photo-slides #portfolio .infinity-gallery{display:none!important}
+[data-home-categories] .service-image{overflow:hidden}.atelier-home [data-home-categories] .category-tile img{filter:none!important}
+
+/* Revised Standard package: pale gold with readable brand-colour text. */
+.atelier-home #photography .pkg.featured{background:#fff6da!important;border-color:#e5cd8e!important;color:#642132!important;box-shadow:0 8px 28px #8b69300c!important}
+.atelier-home #photography .pkg.featured .tier,.atelier-home #photography .pkg.featured .price,.atelier-home #photography .pkg.featured .tagline,.atelier-home #photography .pkg.featured li{color:#642132!important}
+.studio-slideshow{position:relative;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;overflow:hidden;border-radius:0!important;align-self:center}
+.studio-slideshow>img{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;filter:none!important;background:transparent!important;border:0!important;border-radius:0!important}
+.studio-slideshow>img[hidden]{display:none!important}
+.studio-slide-pause{position:absolute;bottom:12px;right:12px;padding:7px 14px;border:1px solid #e3c580;background:#672335;color:#fff6da;border-radius:20px;cursor:pointer}
+.studio-slide-pause:hover{background:#fff6da;color:#672335}
+
+.studio-slideshow>img:not(.studio-current){display:none!important}

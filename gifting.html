@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><style>html.route-pending body{visibility:hidden}html.skip-intro .brand-intro{display:none!important}html.skip-intro{scroll-behavior:auto}</style><script>if(location.hash&& !location.pathname.endsWith('/gifting.html')){document.documentElement.classList.add('skip-intro','route-pending');window.iwRouteFallback=setTimeout(()=>{document.documentElement.classList.remove('route-pending');document.getElementById(location.hash.slice(1))?.scrollIntoView({behavior:'instant'})},3000)}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gifting — InstaWedd — Capture. Celebrate. Cherish.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital@1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/styles-home-v8.css">
+
+
+<script>try{if(false)document.documentElement.classList.add('return-pending')}catch{if(location.hash)document.documentElement.classList.add('return-pending')}</script><style>html.return-pending body{visibility:hidden}</style>
+<link rel="stylesheet" href="assets/brand-oct7.css">
+<link rel="stylesheet" href="assets/refinement-oct9.css?v=5">
+<link rel="stylesheet" href="assets/static.css">
+</head>
+<body class="atelier-home gifting-page collection-theme">
+<div class="brand-intro" aria-label="Welcome to InstaWedd"><div class="intro-sticky"><div class="opening-nav"><a class="opening-brand" href="index.html#home"><span class="iw-logo-mark" aria-hidden="true"></span><span class="iw-wordmark"><b>INSTAWEDD</b> <span>WEDDINGS</span></span></a><nav aria-label="Opening navigation"><a href="index.html#home">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="index.html#portfolio">Portfolio</a><a href="index.html#contact">Contact</a><a href="blogs.html">Blogs</a><a href="journal.html">Wedding Planner</a></nav><div class="opening-actions"><button class="opening-account" aria-label="Open account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-8 16-8 16 0"/></svg></button><a class="js-consult-trigger opening-enquire" href="#contact">Enquire about your date →</a><button class="opening-menu" aria-label="Open navigation">☰</button></div></div><div class="intro-art"><span class="iw-logo-mark" aria-hidden="true"></span><p class="intro-name"><span class="iw-wordmark"><b>INSTAWEDD</b> <span>WEDDINGS</span></span></p><p class="intro-love-story">Capturing your <em>love story,</em><span>one frame at a time.</span></p><a href="index.html#home" class="intro-skip"><span class="scroll-mouse" aria-hidden="true"></span><span>Scroll to explore</span><span aria-hidden="true">↓</span></a></div></div></div>
+
+<div class="topbar announcement-strip" role="region" aria-label="Studio announcements" tabindex="0"><div class="announcement-track"><div class="announcement-group"><span>Now Booking <strong>2026–2027 Wedding Dates</strong></span><i aria-hidden="true">✦ ✧</i><span>Plan your wedding <strong>with us</strong></span><i aria-hidden="true">✦ ✧</i><span><strong>Exciting offers</strong> are coming</span><i aria-hidden="true">✧ ✦</i></div><div class="announcement-group" aria-hidden="true"><span>Now Booking <strong>2026–2027 Wedding Dates</strong></span><i aria-hidden="true">✦ ✧</i><span>Plan your wedding <strong>with us</strong></span><i aria-hidden="true">✦ ✧</i><span><strong>Exciting offers</strong> are coming</span><i aria-hidden="true">✧ ✦</i></div></div></div>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html#home" class="logo"><span class="iw-logo-mark" aria-hidden="true"></span><span class="iw-wordmark"><b>INSTAWEDD</b> <span>WEDDINGS</span></span>
+    </a>
+    <nav class="links main-links" aria-label="Main navigation"><a href="index.html#home">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="index.html#portfolio">Portfolio</a><a href="index.html#contact">Contact</a><a href="blogs.html">Blogs</a><a href="journal.html">Wedding Planner</a></nav>
+    <div class="nav-actions">
+      <div class="account-wrap">
+        <button class="icon-btn" id="accountBtn" aria-label="Account" title="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+        </button>
+        <div class="account-menu" id="accountMenu"></div>
+      </div>
+      <!-- FIX: added js-consult-trigger class so the consultation modal opens from ALL "Enquire about your date" buttons -->
+      <a href="#contact" class="btn small js-consult-trigger">Enquire about your date</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-top">
+    <span class="logo" style="font-size:1.2rem;">INSTAWEDD WEDDINGS</span>
+    <button id="drawerClose" aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#1A1414" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav><a href="index.html#home">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="index.html#portfolio">Portfolio</a><a href="index.html#contact">Contact</a><a href="blogs.html">Blogs</a><a href="journal.html">Wedding Planner</a><a href="#" id="drawerAccountLink">My saved plans</a></nav>
+  <!-- FIX: also uses js-consult-trigger -->
+  <a href="#contact" class="btn js-consult-trigger">Enquire about your date</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Wedding Photography · Makeup &amp; Hair · Gifting · Event Management</p>
+      <h1>Your story, <span class="script">beautifully remembered</span>.</h1>
+      <p class="lead">From the first look to the final celebration, we preserve the moments that make your story yours — with thoughtful photography, films and keepsakes.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn js-consult-trigger">Enquire about your date</a>
+        <a href="#photography" class="btn ghost">Explore photography</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>₹23,999</strong><span>Packages start from</span></div>
+        <div><strong>Made for you</strong><span>Personalised celebration plans</span></div>
+        <div><strong>4</strong><span>Services under one roof</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img data-image-slot="hero-1" src="image/wedding.jpg" alt="Bride and groom sharing a quiet moment on a traditional wooden veranda, from an INSTAWEDD WEDDINGS shoot" />
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="serviceJourney" class="home-discovery"><div class="container"><div class="sec-head"><p class="eyebrow">OUR SERVICES</p><h2>Explore our services</h2><p class="services-description">From timeless photography to beautifully planned celebrations,<br>we create experiences that last a lifetime.</p></div><div class="home-categories" data-home-categories></div><div data-home-photography></div></div></section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="background:#fff;">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow">Real Moments</p>
+      <h2>Portfolio &amp; inspiration gallery</h2>
+      <p>A running gallery of captured INSTAWEDD WEDDINGS, shot across candid, traditional and cinematic coverage.</p>
+    </div>
+    <div class="gallery" aria-label="Portfolio photographs"></div>
+  </div>
+</section>
+
+<section id="photography" style="background:#fff;">
+  
+  <div class="container">
+    <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8zM12 13c2 3 2 5 0 8-2-3-2-5 0-8z"/></svg></div>
+    <div class="sec-head">
+      <p class="eyebrow">Wedding photography</p><h2>Wedding Photography</h2>
+      <p>Full wedding packages, candid &amp; traditional coverage, cinematic films, drone shots and album add-ons — browse by coverage type below.</p>
+    </div>
+
+    <div class="card-grid reveal" style="margin-bottom:70px;">
+      <button type="button" class="photo-card package-link" data-package="full" aria-label="Open Full Wedding Packages details">
+        <div class="art"><img data-image-slot="photography-1" src="image/marriage.jpeg" alt="Full Wedding Packages" /></div>
+        <div class="overlay"><div class="price">From ₹23,999</div><h4>Full Wedding Packages</h4><div class="view">1-day · multi-day · destination</div></div>
+      </button>
+      <button type="button" class="photo-card package-link" data-package="candid" aria-label="Open Candid and Traditional details">
+        <div class="art"><img data-image-slot="photography-2" src="image/bride.jpeg" alt="Candid moment from a wedding" /></div>
+        <div class="overlay"><div class="price">Add-on</div><h4>Candid &amp; Traditional</h4><div class="view">Two coverage styles</div></div>
+      </button>
+      <button type="button" class="photo-card package-link" data-package="film" aria-label="Open Cinematic Videography details">
+        <div class="art"><img data-image-slot="photography-3" src="image/mus.jpg" alt="Still from a cinematic wedding film" /></div>
+        <div class="overlay"><div class="price">Price on request</div><h4>Cinematic Videography</h4><div class="view">Highlights + full film</div></div>
+      </button>
+      <button type="button" class="photo-card package-link" data-package="drone" aria-label="Open Drone Coverage details">
+        <div class="art"><img data-image-slot="photography-4" src="image/drone-service.png" alt="Illustrative camera drone for aerial coverage" /></div>
+        <div class="overlay"><div class="price">Add-on</div><h4>Drone Coverage</h4><div class="view">Aerial highlights</div></div>
+      </button>
+    </div>
+
+    <div class="package-detail" id="packageDetail" aria-hidden="true">
+      <div class="package-detail-card">
+        <button class="package-detail-close" id="packageDetailClose" aria-label="Close package details">✕</button>
+        <div class="package-detail-gallery" id="packageGallery"></div>
+        <div class="package-detail-body">
+          <div class="eyebrow">Your celebration, beautifully covered</div>
+          <h2 id="packageDetailTitle"></h2><p id="packageDetailIntro"></p>
+          <div class="package-detail-meta" id="packageDetailMeta"></div>
+          <h3>What is included</h3><ul id="packageDetailList"></ul>
+          <p><strong>Want the complete quote, availability and personalised options?</strong></p>
+          <button class="btn" id="packageLoginBtn">Log in for more details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-bottom:38px;">
+      <h2 style="font-size:1.9rem;">Choose your package</h2>
+    </div>
+
+    <div class="pkg-wrap reveal">
+      <div class="pkg">
+        <div class="tier">Basic</div>
+        <div class="price">₹23,999</div>
+        <div class="tagline">Simple, elegant &amp; timeless — for intimate celebrations.</div>
+        <ul>
+          <li>✓ 1 professional photographer</li>
+          <li>✓ 60-page premium album</li>
+          <li>✓ Tabletop calendar</li>
+          <li>✓ Mini album</li>
+          <li>✓ Edited photos via pendrive</li>
+        </ul>
+        <a href="#contact" class="btn ghost js-consult-trigger">Enquire</a>
+      </div>
+
+      <div class="pkg featured">
+        <div class="tier">Standard</div>
+        <div class="price">₹27,999</div>
+        <div class="tagline">Chic &amp; charming — a little more sparkle to cherish or gift.</div>
+        <ul>
+          <li>✓ 1 professional photographer</li>
+          <li>✓ 70-page album with special prints</li>
+          <li>✓ Tabletop calendar</li>
+          <li>✓ Mini album, compact for gifting</li>
+          <li>✓ Edited photos via pendrive</li>
+        </ul>
+        <a href="#contact" class="btn js-consult-trigger">Enquire</a>
+      </div>
+
+      <div class="pkg" id="premium-pkg">
+        <div class="tier">Premium</div>
+        <div class="pkg-toggle">
+          <button class="active" data-pkg="album">Album Edition</button>
+          <button data-pkg="film">Film &amp; Reels Edition</button>
+        </div>
+        <div class="price" id="premium-price">₹39,999</div>
+        <div class="tagline" id="premium-tag">Luxurious, glittering &amp; story-driven.</div>
+        <ul id="premium-list">
+          <li>✓ 1 professional photographer</li>
+          <li>✓ 100-page album with glitter prints</li>
+          <li>✓ Mini album, compact for gifting</li>
+          <li>✓ Personalised tabletop calendar</li>
+          <li>✓ 2 ready-to-display framed prints</li>
+          <li>✓ Complimentary pre or post-wedding shoot</li>
+        </ul>
+        <a href="#contact" class="btn ghost js-consult-trigger">Enquire</a>
+      </div>
+    </div>
+    <p class="note">Both Premium options are priced the same — choose the one that fits how you want to remember the day.</p>
+  </div>
+</section>
+
+<section id="bridal">
+  <div class="container">
+    <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8zM12 13c2 3 2 5 0 8-2-3-2-5 0-8z"/></svg></div>
+    <div class="sec-head">
+      <p class="eyebrow">Bridal &amp; pre-wedding shoots</p><h2>Makeup</h2>
+      <p>Bride-to-be shoots, Haldi, engagement and sangeet coverage, plus makeup booked as an add-on or standalone.</p>
+    </div>
+    <div class="card-grid reveal">
+      <div class="photo-card bridal-card" data-bridal="bride">
+        <div class="art"><img data-image-slot="bridal-1" src="image/bridetobe.jpeg" alt="Bride-to-be photoshoot" /></div>
+        <div class="overlay"><div class="price">Standalone shoot</div><h4>Bride-to-be Photoshoot</h4><div class="view">No full package needed</div></div>
+      </div>
+      <div class="photo-card bridal-card" data-bridal="haldi">
+        <div class="art"><img data-image-slot="bridal-2" src="image/makeup.jpeg" alt="Haldi ceremony setup" /></div>
+        <div class="overlay"><div class="price">Half-day</div><h4>Haldi Ceremony Shoot</h4><div class="view">Bright, candid coverage</div></div>
+      </div>
+      <div class="photo-card bridal-card" data-bridal="engagement">
+        <div class="art"><img data-image-slot="bridal-3" src="image/bridemus.jpeg" alt="Engagement shoot" /></div>
+        <div class="overlay"><div class="price">Add-on / standalone</div><h4>Engagement Shoot</h4><div class="view">Studio or location</div></div>
+      </div>
+      <div class="photo-card bridal-card" data-bridal="sangeet">
+        <div class="art"><img data-image-slot="bridal-4" src="image/reception.jpeg" alt="Party and sangeet shoot" /></div>
+        <div class="overlay"><div class="price">Half-day</div><h4>Party / Sangeet Shoot</h4><div class="view">Evening &amp; stage coverage</div></div>
+      </div>
+      <a class="photo-card" href="service.html?id=bridal-makeup" aria-label="Explore bridal makeup"><div class="art"><img data-image-slot="bridal-5" src="image/bridemakeup.jpeg" alt="Bridal makeup"></div><div class="overlay"><div class="price">Standalone</div><h4>Bridal Makeup</h4><div class="view">Your look, beautifully yours</div></div></a>
+    </div>
+    <div class="vendor-row">
+      <div class="vendor-tag"><span class="dot"></span> Bridal makeup artist</div>
+      <div class="vendor-tag"><span class="dot"></span> Party makeup artist</div>
+      <div class="vendor-tag"><span class="dot"></span> Booked as add-on or standalone</div>
+    </div>
+  </div>
+<div class="atelier-makeup-cta"><a class="btn ghost" href="service.html?id=bridal-makeup">Enquire about makeup &amp; hair →</a></div></section>
+
+<!-- FIX: Bridal rate modal now shows specific info per card via JS data -->
+<div class="bridal-rate-backdrop" id="bridalRateModal" aria-hidden="true">
+  <div class="bridal-rate-card" role="dialog" aria-modal="true" aria-labelledby="bridalRateTitle">
+    <button type="button" class="bridal-rate-close" id="bridalRateClose" aria-label="Close makeup rates">✕</button>
+    <p class="eyebrow" id="bridalRateEyebrow">Makeup & Styling</p>
+    <h2 id="bridalRateTitle">Bridal Makeup &amp; Hair Styling</h2>
+    <p id="bridalRateIntro">Choose a service and contact us to confirm your date and personalised look.</p>
+    <div id="bridalRateContent"></div>
+  </div>
+</div>
+
+<section id="gifting" style="background:#fff;">
+  <div class="container">
+    <div class="sec-head">
+      <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8zM12 13c2 3 2 5 0 8-2-3-2-5 0-8z"/></svg></div>
+      <p class="eyebrow">Gifting</p><h2>Gifts made <em>personal.</em></h2>
+      <p>Thoughtful keepsakes for couples, families and every special moment.<br>Because the best memories deserve to be treasured.</p>
+    </div>
+
+    <div class="shopby">
+      <button class="active" data-shop-filter="all">All gifting</button>
+      <button data-shop-filter="couple">For the couple</button>
+      <button data-shop-filter="guests">For guests</button>
+      <button data-shop-filter="squad">Bride &amp; groom squad</button>
+      <button data-shop-filter="hampers">Occasion hampers</button>
+      <button data-shop-filter="under999">Under ₹999</button>
+    </div>
+    <div class="gift-shopbar">
+      <span style="font-size:.82rem;color:#7a6d6d;">Tap a collection to browse products</span>
+      <button class="gift-cart" id="giftCartBtn" type="button" aria-expanded="false">Cart <strong id="giftCartCount">0</strong></button>
+    </div>
+
+    <div class="card-grid reveal" style="margin-bottom:60px;">
+      <button type="button" class="photo-card gift-card" data-gift-category="couple">
+        <div class="art"><img data-image-slot="gifting-1" src="image/album.jpeg" alt="Personalised photo album for the couple" /></div>
+        <div class="overlay"><div class="price">For the couple</div><h4>Personalised albums &amp; keepsakes</h4><div class="view">Personalised keepsakes</div></div>
+      </button>
+      <button type="button" class="photo-card gift-card" data-gift-category="return-gift">
+        <div class="art"><img data-image-slot="gifting-2" src="image/return.jpeg" alt="Bulk return gifts for wedding guests" /></div>
+        <div class="overlay"><div class="price">For guests</div><h4>Thoughtful return gifts</h4><div class="view">Order in bulk</div></div>
+      </button>
+      <button type="button" class="photo-card gift-card" data-gift-category="bridal-hamper">
+        <div class="art"><img data-image-slot="gifting-3" src="image/gifft.jpeg" alt="Matching hamper set for the bridal squad" /></div>
+        <div class="overlay"><div class="price">Bride &amp; groom squad</div><h4>Memorable squad gifts</h4><div class="view">Matching hampers</div></div>
+      </button>
+      <button type="button" class="photo-card gift-card" data-gift-category="engagement-hamper">
+        <div class="art"><img data-image-slot="gifting-4" src="image/gift.jpeg" alt="Haldi and engagement hamper" /></div>
+        <div class="overlay"><div class="price">Haldi &amp; engagement</div><h4>Celebration-ready hampers</h4><div class="view">Occasion add-ons</div></div>
+      </button>
+    </div>
+
+    <div class="gift-detail" id="giftDetail" aria-hidden="true">
+      <div class="gift-detail-card">
+        <div class="gift-detail-head">
+          <div><div class="eyebrow">The InstaWedd gifting shop</div><h2 id="giftDetailTitle">Wedding keepsakes</h2><p id="giftDetailIntro">Choose a product and add it to your cart.</p></div>
+          <button class="gift-detail-close" id="giftDetailClose" aria-label="Close gifting shop">✕</button>
+        </div>
+        <section class="gift-shop-hero"><div><p class="eyebrow">Thoughtful gifts. Lasting memories.</p><h2>Made with love,<br>meant to be <em>cherished.</em></h2><p>Little keepsakes for your favourite people and your most meaningful moments.</p><a class="btn" href="#giftProducts">Shop the collection ↗</a></div><img src="image/gift.jpeg" alt="Personalised gifts from InstaWedd"></section><div class="gift-promises"><span>✧ Personalised details</span><span>♡ Made for your moments</span><span>◇ Prints & keepsakes</span><button type="button" class="studio-support js-consult-trigger" data-service="Gifting">↗ Studio support</button></div><h3 class="gift-category-heading">Shop by category</h3><div class="gift-category-tabs" id="giftCategoryTabs"></div>
+        <button type="button" class="gift-filter-toggle" id="giftFilterToggle" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Filters
+        </button>
+        <div class="gift-price-filter" id="giftPriceFilter">
+          <label>Minimum price<input type="number" id="giftMinPrice" min="20" max="100000" value="20" /></label>
+          <div class="gift-range" aria-label="Price range">
+            <input type="range" id="giftMinRange" min="20" max="100000" value="20" step="10" aria-label="Minimum price slider" />
+            <input type="range" id="giftMaxRange" min="20" max="100000" value="100000" step="10" aria-label="Maximum price slider" />
+          </div>
+          <label>Maximum price<input type="number" id="giftMaxPrice" min="20" max="100000" value="100000" /></label>
+          <button type="button" id="giftApplyPrice">Apply filter</button>
+        </div>
+        <div class="gift-products" id="giftProducts"></div><div class="gift-editorial-banners"><a href="#giftProducts"><img src="assets/illustrations/flowers.png" alt=""><h3>A little gift.<br>A beautiful story.</h3><span>Explore your keepsakes above ↑</span></a><a href="journal.html"><h3>Plans, dreams<br>& little memories.</h3><span>Open your personal journal ↗</span><img src="assets/illustrations/letter.png" alt=""></a></div>
+        <div class="gift-cart-panel" id="giftCartPanel">
+          <h3>Your cart</h3><div id="giftCartLines"></div><div class="gift-cart-total"><span>Total</span><span id="giftCartTotal">₹0</span></div><button type="button" class="gift-buy" id="giftCartBuyBtn">Buy now</button>
+        </div>
+      </div>
+    </div>
+    <div class="gift-confirm" id="giftConfirm" aria-hidden="true">
+      <div class="gift-confirm-card">
+        <h3>Add this item to cart?</h3>
+        <p id="giftConfirmText"></p>
+        <div class="gift-confirm-actions"><button type="button" class="btn ghost" id="giftCancelBtn">Cancel</button><button type="button" class="btn" id="giftConfirmBtn">Add to Cart</button></div>
+      </div>
+    </div>
+    <div class="photo-checkout" id="photoCheckout" aria-hidden="true">
+      <div class="photo-checkout-inner">
+        <div class="photo-checkout-head"><h2>Review your photo order</h2><button type="button" class="photo-checkout-back" id="photoCheckoutBack">Back to shop</button></div>
+        <div class="photo-checkout-layout">
+          <div class="photo-checkout-panel">
+            <h3>Uploaded photos</h3>
+            <div class="checkout-photo-grid" id="checkoutPhotoGrid"></div>
+            <input class="checkout-upload" type="file" id="checkoutAddPhotos" accept="image/*" multiple />
+            <button type="button" class="checkout-add-more" id="checkoutAddMore">+ Add more photos</button>
+          </div>
+          <div class="photo-checkout-panel">
+            <h3>Order summary</h3>
+            <div id="checkoutSummary"></div>
+            <div class="checkout-summary-total"><span>Total</span><span id="checkoutTotal">₹0</span></div>
+            <button type="button" class="btn checkout-primary" id="photoPrintBtn">Review personalised gift</button>
+            <div class="checkout-address" id="checkoutAddress">
+              <h3>Delivery details</h3>
+              <div class="checkout-form-grid">
+                <label>Full name<input id="checkoutName" type="text" autocomplete="name" required /></label>
+                <label>Phone number<input id="checkoutPhone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" required /></label>
+                <label>Pincode<input id="checkoutPincode" type="text" inputmode="numeric" maxlength="6" required /></label>
+                <label>Nearest post office<input id="checkoutPostOffice" type="text" required /></label>
+                <label class="field-full">Address<input id="checkoutAddressText" type="text" autocomplete="street-address" required /></label>
+              </div>
+              <button type="button" class="btn checkout-primary" id="checkoutPayBtn">Review gift request</button>
+              <p class="checkout-status" id="checkoutStatus" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="crop-editor" id="giftCropEditor" aria-hidden="true">
+      <div class="crop-editor-card">
+        <h3>Crop your image</h3>
+        <div class="crop-viewport"><img id="giftCropImage" alt="Crop preview"></div>
+        <label class="crop-control">Zoom<input type="range" id="giftCropZoom" min="1" max="3" step="0.05" value="1"><output id="giftCropZoomValue">1×</output></label>
+        <label class="crop-control">Left / right<input type="range" id="giftCropX" min="-100" max="100" value="0"><output id="giftCropXValue">0</output></label>
+        <label class="crop-control">Up / down<input type="range" id="giftCropY" min="-100" max="100" value="0"><output id="giftCropYValue">0</output></label>
+        <div class="crop-editor-actions"><button type="button" class="btn ghost" id="giftCropCancel">Cancel</button><button type="button" class="btn" id="giftCropSave">Save Crop</button></div>
+      </div>
+    </div>
+
+    <div class="personalizer reveal">
+      <div class="controls">
+        <p class="eyebrow" style="margin-bottom:.2em;">Create your keepsake</p>
+        <h3 style="font-size:1.4rem;">Build a photo keepsake</h3>
+        <p style="font-size:.88rem;">Turn your favourite moments into something meaningful. Choose your keepsake and make it yours.</p>
+
+        <div class="field">
+          <label for="giftProduct"><span class="step-dot">1</span> Choose your product</label>
+          <select id="giftProduct">
+            <option value="print">Photo Print</option>
+            <option value="print-set">Photo Prints</option>
+            <option value="frame">Personalised Photo Frame — ₹299</option>
+          </select>
+        </div>
+        <div class="field upload-field">
+          <label for="giftImageUpload"><span class="step-dot">2</span> Upload your photos</label>
+          <input type="file" id="giftImageUpload" accept="image/*" multiple />
+          <p class="upload-help" id="giftUploadHelp">Add up to 10 photos for prints. Frames use the first selected photo.</p>
+          <div class="upload-previews" id="giftUploadPreviews"></div>
+        </div>
+        <div class="field">
+          <label for="giftCaption"><span class="step-dot">3</span> Add a personal message</label>
+          <input type="text" id="giftCaption" maxlength="28" value="Forever starts here" placeholder="Type a caption…" />
+        </div>
+        <div class="field quantity-field"><label for="giftQuantity"><span class="step-dot">4</span> Quantity</label><div class="quantity-control"><button type="button" id="giftQuantityMinus" aria-label="Decrease quantity">−</button><input id="giftQuantity" type="number" min="1" max="99" step="1" value="1"><button type="button" id="giftQuantityPlus" aria-label="Increase quantity">+</button></div></div><p class="price-note" id="giftPersonalizerPrice">Photo Print · ₹0</p>
+        <button class="btn" id="addToCartBtn" type="button">Add to Cart</button>
+      </div>
+      <div class="preview">
+        <img class="keepsake-reference" src="image/keepsake-reference.png" alt="Sample photo keepsake with a personal message"><div class="personalizer-preview-stage">
+          <button type="button" class="preview-nav" id="giftPrevBtn" aria-label="Previous uploaded image">‹</button>
+          <div class="frame">
+            <div class="photo-slot" id="giftPhotoSlot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="M21 16l-5.5-5.5L9 17"/></svg></div>
+            <div class="cap" id="framePreviewCaption">Forever starts here</div>
+          </div>
+          <button type="button" class="preview-nav" id="giftNextBtn" aria-label="Next uploaded image">›</button>
+        </div>
+        <button type="button" class="crop-action" id="giftCropBtn" disabled>Crop selected image</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="container">
+    <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8zM12 13c2 3 2 5 0 8-2-3-2-5 0-8z"/></svg></div>
+    <div class="sec-head">
+      <p class="eyebrow">Event management</p><h2>Event Management</h2>
+      <p>Wedding planning, décor and day-of coordination, shaped around your celebration.</p>
+    </div>
+
+    <div class="card-grid reveal" style="grid-template-columns:repeat(2,1fr); max-width:640px; margin:0 auto 56px;">
+      <div class="photo-card">
+        <div class="art"><img data-image-slot="events-1" src="image/Eventplace.jpeg" alt="Wedding event venue" /></div>
+        <div class="overlay"><div class="price">Venue</div><h4>Event Spaces</h4><div class="view">Partner venues &amp; halls</div></div>
+      </div>
+      <div class="photo-card">
+        <div class="art"><img data-image-slot="events-2" src="image/decor.jpeg" alt="Wedding decor setup" /></div>
+        <div class="overlay"><div class="price">Decor</div><h4>Decor &amp; Styling</h4><div class="view">Coordinated with your theme</div></div>
+      </div>
+    </div>
+
+    <div class="service-enquiry"><p class="eyebrow">From an intimate ceremony to a full celebration</p><h3>We bring your vision to life</h3><p>Tell us your date, venue and ideas, and our team will help shape a memorable celebration around you.</p><button class="btn js-consult-trigger" data-service="Event Management">Plan your event ↗</button></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi-wrap">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow" style="color:var(--gold);">What couples say</p>
+      <h2 style="color:#fff;">Real weddings & real feedback</h2>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <p>"Our highlights film was ready before we'd even left for our honeymoon. It felt like it knew exactly which moments mattered to us."</p>
+        <div class="testi-who"><div class="avatar">A</div><div><strong>Abijith &amp; Ardra</strong><span>Premium package, Malappuram</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p>"We ordered photobooks for both sets of parents straight from the gallery the week after the wedding. Zero back-and-forth over messages."</p>
+        <div class="testi-who"><div class="avatar">S</div><div><strong>Shreya &amp; Vikram</strong><span>Premium package, Goa</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p>"Having the budget tracker and the shot list in one place saved my sister hours every week during planning."</p>
+        <div class="testi-who"><div class="avatar">K</div><div><strong>Padma</strong><span>Standard package, Kozhikode</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journal-intro" class="journal-invitation"><div class="container journal-reference"><div class="journal-reference-copy"><p class="eyebrow">A LITTLE SPACE FOR YOUR BIG DAY</p><h2>Your wedding, one lovely page at a time.</h2><p>Jot down ideas, tick off little wins, sketch a dress or plan your budget.<br>Your personal notebook opens separately.</p><a class="btn ghost" href="journal.html">11:11 Open Journal →</a></div></div></section>
+<!-- CTA BAND -->
+<section class="cta-band" id="contact">
+  <div class="container">
+    <h2>Let's plan the day, <em>start to finish</em></h2>
+    <p>Photography, makeup, gifting and events — tell us what you have in mind, and we’ll help you plan the next step.</p>
+    <button class="btn js-consult-trigger">Send an enquiry ↗</button>
+    <a href="tel:9605509516" class="btn ghost call-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.8 4.5 5.9c-.8.8-.7 2.2-.1 3.4 2.1 4.2 5.5 7.6 9.7 9.7 1.2.6 2.6.7 3.4-.1l2.1-2.1-3.1-3.1-2.2 1.5c-1.9-.9-3.4-2.4-4.3-4.3l1.5-2.2-3.1-3.1z"/><path d="M15.5 4.5c2.2.5 3.5 1.8 4 4"/></svg>Call · +91 96055 09516</a>
+    
+    <a href="https://www.instagram.com/instawedd_weddings/" target="_blank" rel="noopener noreferrer" class="btn ghost instagram-btn" aria-label="Visit INSTAWEDD WEDDINGS on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg><span class="instagram-handle">@instawedd_weddings</span></a>
+  </div>
+</section>
+
+<!-- MATRIX PHOTO STUDIO -->
+<section id="studio" style="background:#fff;">
+  <div class="container">
+    <div class="event-wrap reveal">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Visit Our <em>Studio</em></h2><p><a class="small-social" href="https://www.instagram.com/matrixstudioofficial/" target="_blank" rel="noopener">◎ @matrixstudioofficial ↗</a></p>
+        <p>Step in, explore our space, and let’s create something beautiful together. Browse our albums, frames and keepsakes, or tell us about your celebration.</p>
+        <div style="margin: 24px 0; color: #4a3f3f; font-size: .95rem;">
+          <strong>Address:</strong><br/>
+          Dubai Tower, Kohinoor,<br/>
+          Calicut University P.O., Kerala — 673635<br/><br/>
+          <strong>Phone:</strong> <a href="tel:+919605509516">+91 96055 09516</a><br/><strong>Email:</strong> <a href="mailto:Matrixofficial2022@gmail.com">Matrixofficial2022@gmail.com</a><br/>
+          <strong>Visits:</strong> Please call or message before visiting
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Matrix+Studio+Dubai+Tower+Kohinoor+Calicut+University+Kerala+673635" target="_blank" rel="noopener noreferrer" class="btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Get Directions
+        </a>
+      </div>
+      <div class="studio-reference studio-slideshow" aria-label="Matrix Studio photographs"><img class="studio-current" src="image/studio-home-interior-v4.png" alt="Matrix Studio entrance, reception and album display" loading="eager"><img src="image/studio-home-services-v4.jpeg" alt="Matrix Studio photography, frames and portrait services" loading="eager" hidden></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px;">INSTAWEDD WEDDINGS</div>
+        <p style="color:#bba9a9;font-size:.88rem;">Capture. Celebrate. Cherish. — wedding photography, personalised gifting and event management, in one place.</p>
+        <p style="color:#bba9a9;font-size:.88rem;">Contact: 9605509516</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#photography">Wedding Photography</a></li>
+          <li><a href="#bridal">Bridal &amp; Pre-Wedding Shoots + Makeup</a></li>
+          <li><a href="#gifting">Gifting</a></li>
+          <li><a href="#events">Event Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#" class="requires-auth">My Enquiries</a></li>
+          <li><a href="#" class="requires-auth">Gifting Requests</a></li>
+          <li><a href="#" class="requires-auth">Wedding Journal</a></li>
+          <li><a href="#" class="requires-auth">Saved / Wishlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p style="color:#bba9a9;font-size:.85rem;">Ask us about upcoming offers by email.</p>
+        <!-- FIX: newsletter now has working submit with validation + toast feedback -->
+        <div class="newsletter" id="newsletterForm">
+          <input type="text" id="newsletterEmail" placeholder="Enter your email" aria-label="Email" />
+          <button type="button" id="newsletterBtn">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-extras"><a href="terms.html">Terms & conditions</a><a href="privacy.html">Privacy policy</a><div class="footer-follow"><span>Follow us</span><div class="portal-socials" data-socials></div></div></div><div class="foot-bottom">
+      <span>© 2026 INSTAWEDD WEDDINGS. All rights reserved.</span>
+      <span>Made with care for every celebration.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter toast -->
+<div class="newsletter-toast" id="newsletterToast" role="status" aria-live="polite"></div>
+
+<!-- Sticky consult -->
+<a href="#contact" class="btn sticky-consult js-consult-trigger">Enquire about your date</a>
+
+<!-- Chatbot -->
+<button class="chat-launcher" id="chatLauncher" aria-label="Open Ask InstaWedd chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 01-8.5 8.4 8.7 8.7 0 01-3.8-.9L3 20l1.2-3.6a8.3 8.3 0 01-1-4A8.4 8.4 0 0111.5 3.5 8.4 8.4 0 0121 11.5z"/><circle cx="8.5" cy="11.5" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="11.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="11.5" r=".9" fill="currentColor" stroke="none"/></svg>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="who">
+      <div class="avatar">I</div>
+      <div><strong>Ask InstaWedd WEDDINGS</strong><span>Quick service guide</span></div>
+    </div>
+    <button id="chatClose" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="bubble bot">Hi! I can answer questions about packages, suggest gifts, pricing, or anything about our services. What would you like to know?</div>
+  </div>
+  <div class="quick-replies" id="quickReplies">
+    <button data-q="premium">What's in Premium?</button>
+    <button data-q="gift">Suggest a gift</button>
+    <button data-q="offers">Any offers on?</button>
+    <button data-q="human">Talk to a human</button>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type a question…" />
+    <button id="chatSend" aria-label="Send">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </div>
+</div>
+
+        <div class="consult-modal-backdrop" id="consultModal" aria-hidden="true">
+          <div class="consult-modal" role="dialog" aria-modal="true" aria-labelledby="consultTitle">
+            <button type="button" class="consult-close" id="consultClose" aria-label="Close consultation contacts">✕</button>
+            <p class="eyebrow">Let's plan your celebration</p>
+            <h2 id="consultTitle">Tell us about your day</h2>
+            <p>Photography, makeup, gifting or events — we’re happy to help.</p>
+<form id="enquiryForm"><div class="enquiry-fields"><label>Your name<input name="customer" autocomplete="name" required maxlength="100"></label><label>Phone or email<input name="contact" required maxlength="150" autocomplete="email"></label><label>Service<select name="service"><option>Photography</option><option>Makeup &amp; Hair</option><option>Gifting</option><option>Event Management</option><option>Multiple services</option></select></label><label>Wedding / event date (optional)<input name="date" type="date"></label><label class="wide">Venue or location (optional)<input name="venue" placeholder="e.g. Kozhikode" maxlength="200"></label><label class="wide">Your message<textarea name="message" rows="4" required maxlength="3000">Hello InstaWedd! I’m planning a celebration and would love to know your availability and packages. Please share the details when convenient. Thank you!</textarea></label></div><p class="enquiry-note">Sign in to send an enquiry to our team and save it in My Account. Or choose email or WhatsApp and send your message in that app. A booking is confirmed after we discuss availability with you.</p><div class="enquiry-actions"><button class="btn" name="channel" value="website">Send enquiry</button><button class="btn" name="channel" value="email">Open email ↗</button><button class="btn ghost" name="channel" value="whatsapp">Open WhatsApp ↗</button><button class="text-button" name="channel" value="copy">Copy message</button></div><p id="enquiryStatus" role="status"></p></form><div class="consult-links"><a href="tel:+919605509516">Call +91 96055 09516</a><a href="https://www.instagram.com/instawedd_weddings/" target="_blank" rel="noopener noreferrer">Instagram · @instawedd_weddings ↗</a><a href="mailto:instaweddweddingphotography@gmail.com">instaweddweddingphotography@gmail.com</a></div></div></div><dialog id="localWorkspace" class="local-dialog" aria-label="Your saved plans"><div class="local-dialog-head"><div><p class="eyebrow">Your saved plans</p><h2 id="localTitle">My InstaWedd</h2></div><button class="local-close" aria-label="Close" id="localClose">×</button></div><p class="muted" id="profileCaption"></p><nav class="local-tabs"><button data-local="wishlist">Saved gifts</button><button data-local="cart">Cart</button><a class="btn ghost small" href="journal.html">Journal ↗</a></nav><div id="localContent"></div></dialog>
+<script src="assets/storage.js"></script>
+<script src="assets/public-content.js"></script><script src="assets/static-api.js"></script>
+<script src="assets/catalogue.js"></script>
+
+<script src="assets/enquiry-context.js"></script><script src="assets/site.js"></script>
+<script src="assets/navigation.js"></script><script src="assets/updates.js"></script><script src="assets/editorial.js"></script><script src="assets/photo-scroll.js"></script>
+<script src="assets/portal.js?v=3"></script><script src="assets/section-photos.js"></script><script src="assets/customer-updates.js"></script><script src="assets/atelier.js"></script><script src="assets/collection.js"></script><script src="assets/refinement-v5.js"></script><script src="assets/page-navigation.js"></script><script src="assets/studio-slideshow.js?v=6" defer></script>
+<script src="assets/static-ui.js"></script>
+</body></html>
